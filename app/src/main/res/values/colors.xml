@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="colorPrimary">#C22300</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#173883</color>
+    <color name="colorAccentBlue">#005bad</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="Red_C22300">#C22300</color>
+    <color name="Grey303030">#303030</color>
+    <color name="gray_wip_date">#C3D3F9</color>
+    <color name="translucent_wip">#86000000</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="live_dashboard_transperent">#7F000000</color>
+
+    <color name="gray_e4e4e4">#e4e4e4</color>
+    <color name="gray_5f5f5f">#5f5f5f</color>
+    <color name="gray_b4b7bc">#b4b7bc</color>
+    <color name="gray_wip">#555555</color>
+    <color name="gray_bdb9b9">#bdb9b9</color>
+    <color name="gray_b8b8b8">#b8b8b8</color>
+
+    <color name="gray_AFAFAF">#AFAFAF</color>
+    <color name="red_e52937">#e52937</color>
+    <color name="gray_10275b">#10275b</color>
+    <color name="gray_4e4e4e">#4e4e4e</color>
+    <color name="gray_seperator">#b0b5bd</color>
+    <color name="gray_7d7d7d">#7d7d7d</color>
+    <color name="gray_909090">#909090</color>
+    <color name="gray_4B4B4B">#4B4B4B</color>
+    <color name="gray_818181">#818181</color>
+    <color name="black">#000000</color>
+    <color name="black_wip">#333333</color>
+    <color name="black_3A3A3A">#3a3a3a</color>
+    <color name="black_262626">#262626</color>
+    <color name="Red_DE4118">#de4118</color>
+    <color name="Red_BA2200">#ba2200</color>
+    <color name="Yellow_FEBD0F">#febd0f</color>
+    <color name="Red_F02C00">#F02C00</color>
+    <color name="Red_F2081C">#f2081c</color>
+    <color name="Red_F12C00">#f12c00</color>
+    <color name="gray_929292">#929292</color>
+    <color name="gray_808080">#40808080</color>
+    <color name="color_808080">#808080</color>
+    <color name="hyperlink_blue">#0000FF</color>
+    <color name="blue_173781">#173781</color>
+    <color name="blue_0a3788">#0a3788</color>
+    <color name="blue_0a3688">#0a3688</color>
+    <color name="gray_AAAAAA">#aaaaaa</color>
+    <color name="gray_606370">#606370</color>
+    <color name="gray_e6e7e8">#e6e7e8</color>
+    <color name="blue">#00a8ff</color>
+
+
+    <!--U408 color-->
+    <color name="black_454545">#454545</color>
+    <color name="green_39b54a">#39b54a</color>
+    <color name="grey_cccccc">#cccccc</color>
+    <color name="yellow_ffe600">#ffe600</color>
+    <color name="yellow_ffd400">#ffd400</color>
+
+    <color name="blue_007AFF">#007AFF</color>
+    <color name="blue_84aaff">#84aaff</color>
+    <color name="blue_2250BA">#602250BA</color>
+    <color name="blue_1A0497">#FF1a0497</color>
+    <color name="blue_wip">#183883</color>
+    <color name="color_777e9b">#777e9b</color>.
+    <color name="color_b6bdc7">#B6BDC7</color>
+    <color name="color_f6f6f6">#F6F6F6</color>
+    <color name="color_7f7f7f">#7F7F7F</color>
+    <color name="color_ffec1C">#FFEC1C</color>
+    <color name="color_006BA9">#006BA9</color>
+    <color name="color_0A3688">#0a3688</color>
+
+    <color name="color_e6252834">#E6252834</color>
+    <color name="color_000000">#4D000000</color>
+    <color name="color_a5a4a4">#a5a4a4</color>
+    <color name="color_33000000">#33000000</color>
+    <color name="color_26000000">#26000000</color>
+    <color name="color_gray">#D3D3D3</color>
+    <color name="color_252834">#252834</color>
+    <color name="color_00aeeff">#00AEFF</color>
+    <color name="blue_eaf0ff">#eaf0ff</color>
+    <color name="gray_656565">#656565</color>
+    <color name="red">#B22000</color>
+    <color name="red_wip">#EE313C</color>
+    <color name="color_1d1d1d">#1d1d1d</color>
+    <color name="color_99999">#999999</color>
+    <color name="color_991d1d1d">#991d1d1d</color>
+    <color name="color_1a6884">#1a6884</color>
+    <color name="color_1b113f">#1b113f</color>
+    <color name="color_287590">#287590</color>
+    <color name="color_201b42">#201b42</color>
+
+    <!--map my india starts-->
+    <!-- Screens background color-->
+    <!-- dots inactive colors -->
+    <!-- dots active colors -->
+    <color name="color_787D9A">#787D9A</color>
+    <color name="grey_d9d9d9">#D9D9D9</color>
+    <color name="color_fafafa">#FAFAFA</color>
+    <color name="color_104a97">#1A4097</color>
+    <color name="color222535">#222535</color>
+
+    <color name="color787E99">#787E99</color>
+    <color name="colorfdfdfd">#fdfdfd</color>
+    <color name="color4B79E1">#4B79E1</color>
+    <color name="color696d85">#696D85</color>
+    <color name="color_1affffff">#1AFFFFFF</color>
+    <color name="color_007fff">#007FFF</color>
+    <color name="color_37D500">#37D500</color>
+    <color name="color_E7AB0C">#E7AB0C</color>
+    <color name="color_008CfB">#008CfB</color>
+    <color name="color_66ffffff">#66ffffff</color>
+    <color name="color_f1f2f2">#f1f2f2</color>
+
+    <!--map my india ends-->
+
+    <color name="color_F7F5F6">#F7F5F6</color>
+    <color name="color_D8CEB4">#D8CEB4</color>
+
+    <color name="color_262835">#262835</color>
+    <color name="color_DCDCDC">#DCDCDC</color>
+    <color name="color_F8F8F8">#F8F8F8</color>
+
+    <color name="color_F3F3F3">#F3F3F3</color>
+    <color name="color_8F8F8F">#8F8F8F</color>
+    <color name="color_646464">#646464</color>
+
+
+    <color name="color_70opacity_blck">#B3000000</color>
+    <color name="color_80opacity_blck">#CC000000</color>
+    <color name="color_70opacity_white">#66FFFFFF</color>
+    <color name="color_30opacity_white">#BFFFFFFF</color>
+    <color name="gray_696D85">#696d85</color>
+    <color name="blue_102963">#102963</color>
+    <color name="black_383838">#383838</color>
+
+    <color name="color_686868">#686868</color>
+    <color name="color_94B6FF">#94B6FF</color>
+    <color name="gray_f5e9ec">#f5e9ec</color>
+
+    <color name="color_green_text">#454545</color>
+    <color name="color_fuel_status">#04a900</color>
+    <color name="color_fuel_status_empty">#ffffff</color>
+    <color name="color_disable_grey">#939598</color>
+    <color name="color_ffe600">#ffe600</color>
+    <color name="color_blue">#0082fc</color>
+    <color name="color_red">#ea2b32</color>
+    <color name="color_u399_red">#ff0000</color>
+
+
+    <color name="black_overlay">#66000000</color>
+    <color name="black_overlay_dark">#D9000000</color>
+    <color name="widget_static_text_color">#b3000000</color>
+    <color name="widget_readings_color">#808285</color>
+
+
+    <color name="color_u399_bg">#f2f4f8</color>
+    <color name="color_004382">#004382</color>
+    <color name="color_e2e3e4">#e2e3e4</color>
+    <color name="color_808285">#808285</color>
+    <color name="color_f7f9fb">#f7f9fb</color>
+    <color name="color_fcfcfe">#fcfcfe</color>
+    <color name="color_800000">#800000</color>
+    <color name="color_192841">#192841</color>
+    <color name="color_7091ab">#7091ab</color>
+    <color name="color_cccccc">#cccccc</color>
+
+    <color name="color_barchart_blue">#0C1265</color>
+    <color name="color_barchart_orange">#EA2B3B</color>
+    <color name="color_barchart_speed1">#2785D9</color>
+    <color name="color_barchart_speed2">#A40317</color>
+    <color name="color_barchart_speed3">#031657</color>
+    <color name="color_u368_barchart_gradient1">#192841</color>
+    <color name="color_u368_barchart_gradient2">#1e87e1</color>
+    <color name="color_u368_barchart_gradient3">#2e5782</color>
+    <color name="color_626262">#626262</color>
+
+    <color name="color_u449_barchart_gradient1">#5e050b</color>
+    <color name="color_u449_barchart_gradient2">#ea0111</color>
+    <color name="color_u449_barchart_gradient3">#800000</color>
+    <!--<color name="color_u449_barchart_gradient4">#323232</color>-->
+    <color name="color_u449_barchart_gradient4">#5e050b</color>
+
+    <color name="color_edfof5">#EDF0F5</color>
+    <color name="color_a000b">#a0000b</color>
+    <color name="widget_static_header_color">#e4e6eb</color>
+    <color name="color_000b47">#000b47</color>
+    <color name="gray_58595b">#58595b</color>
+    <color name="color_00a651">#00a651</color>
+
+    <color name="color_000b46">#000b46</color>
+    <color name="color_111966">#090F52</color>
+    <color name="color_ed1c24">#ed1c24</color>
+
+    <color name="color_f89738">#f89738</color>
+    <color name="color_0bd629">#0bd629</color>
+
+    <color name="color_ee303c">#ee303c</color>
+    <color name="color_a4010c">#a4010c</color>
+
+    <color name="color_3a3a3a">#3a3a3a</color>
+    <color name="color_ea2b32">#ea2b32</color>
+    <color name="racing_bg_color">#363636</color>
+    <color name="racing_font_clr">#e3331e</color>
+    <color name="color_view_all_load_more">#E6EAF0</color>
+    <color name="gray_eaeaea">#EAEAEA</color>
+    <color name="gray_f4f5f9">#F4F5F9</color>
+
+    <color name="golden">#c38f26</color>
+    <color name="green">#009051</color>
+
+    <color name="color_58595b">#58595b</color>
+
+    <color name="color_u399_ride_analysis_acc_dece">#a4010c</color>
+    <color name="color_u399_ride_analysis_rpm">#004281</color>
+    <color name="color_u399_ride_analysis_speed">#00a651</color>
+    <color name="color_u399_ride_analysis_altitude">#00aeef</color>
+
+    <color name="color_u399_ride_analysis_60_90">#0099c3</color>
+    <color name="color_u399_ride_analysis_30_60">#f86f41</color>
+    <color name="color_u399_ride_analysis_90_180">#009940</color>
+    <color name="color_u399_ride_analysis_0_30">#cc3300</color>
+
+    <color name="u399_ride_analysis_indicator_selected">#010b47</color>
+    <color name="u399_ride_analysis_indicator_unselected">#808285</color>
+    <color name="color_f5e9ec">#f5e9ec</color>
+    <color name="color_a40914">#a40914</color>
+    <color name="color_a0000b">#A0000B</color>
+    <color name="color_CCCCCC">#CCCCCC</color>
+    <color name="color_0082FC">#0082FC</color>
+
+    <color name="color_u399_lap_green">#00a651</color>
+    <color name="color_u399_lap_red">#ff0000</color>
+    <color name="color_00075B">#00075B</color>
+    <color name="color_DE2830">#DE2830</color>
+    <color name="color_u399_lap_tap">#797979</color>
+    <color name="color_toast_bg">#004281</color>
+
+
+    <color name="app_blue">#385167</color>
+    <color name="translucent_base_color">#0039f10b</color>
+
+    <color name="color_ntorq_speed_pattarn_c">#21ff26</color>
+    <color name="color_ntorq_speed_pattarn_b">#1bc2ff</color>
+    <color name="color_ntorq_speed_pattarn_a">#ffff00</color>
+
+    <color name="color_u532_speed_pattern_c">#57d41a</color>
+    <color name="color_u532_speed_pattern_b">#1584e5</color>
+    <color name="color_u532_speed_pattern_a">#ffca12</color>
+
+    <color name="color_livedash_shadow_marval_2">#762d91</color>
+    <color name="color_livedash_shadow_marval_7">#ffffff</color>
+    <color name="color_livedash_shadow_marval_8">#78c8ff</color>
+
+    <color name="color_u445_livedash_rpm_2">#ebb231</color>
+    <color name="color_u445_livedash_rpm_3">#ffffff</color>
+    <color name="color_u445_livedash_rpm_4">#ffffff</color>
+    <color name="color_u445_livedash_rpm_8">#78c8ff</color>
+
+    <color name="color_25bfff">#25bfff</color>
+    <color name="color_5d6771">#5d6771</color>
+    <color name="color_b3ffffff">#b3ffffff</color>
+    <color name="color_ebb231">#ebb231</color>
+    <color name="color_9b9da0">#9b9da0</color>
+    <color name="color_ccffffff">#ffffff</color> <!--#ccffffff-->
+    <color name="color_4cffffff">#4cffffff</color>
+    <color name="color_99ffffff">#99ffffff</color>
+
+    <color name="color_u445_myride_time_2">@color/color_5d6771</color>
+    <color name="color_u445_myride_time_3">#b3ffffff</color>
+    <color name="color_u445_myride_time_4">@color/color_b3ffffff</color>
+
+    <color name="color_u445_myride_name_2">@color/color_ebb231</color>
+    <color name="color_u445_myride_name_3">@color/color_25bfff</color>
+    <color name="color_u445_myride_name_4">@android:color/white</color>
+    <color name="color_u445_myride_name_7">@android:color/white</color>
+    <color name="color_u445_myride_name_8">#78c8ff</color>
+
+    <color name="color_u445_myride_duration_2">@color/color_9b9da0</color>
+    <color name="color_u445_myride_duration_3">@android:color/white</color>
+    <color name="color_u445_myride_duration_4">@color/color_ccffffff</color>
+
+    <color name="color_u445_myride_count_2">@color/color_ebb231</color>
+    <color name="color_u445_myride_count_3">@android:color/white</color>
+    <color name="color_u445_myride_count_4">@android:color/white</color>
+
+    <color name="color_u445_livedash_text_2">#9b9da0</color>
+    <color name="color_u445_livedash_text_3">#ffffff</color>
+    <color name="color_u445_livedash_text_4">#ffffff</color>
+
+    <color name="color_u445_bg_2">#000000</color>
+    <color name="color_u445_bg_3">#011327</color>
+    <color name="color_u445_bg_4">#2e000e</color>
+    <color name="color_u445_bg_5">#000000</color>
+    <color name="color_u445_bg_7">#001165</color>
+    <color name="color_u445_bg_8">#000000</color>
+
+    <color name="color_u445_bg_hidden_view_4">#5d2426</color>
+    <color name="color_u445_bg_hidden_view_7">#5d2426</color>
+
+    <color name="color_u445_text_2">#ebb231</color>
+    <color name="color_u445_text_3">#ffffff</color>
+    <color name="color_u445_text_4">#ffffff</color>
+
+    <color name="color_u445_bg_bike_overview_card_2">@color/color_ccffffff</color>
+    <color name="color_u445_bg_bike_overview_card_3">@color/color_99ffffff</color>
+    <color name="color_u445_bg_bike_overview_card_4">@color/color_ccffffff</color>
+
+    <color name="color_u445_bike_overview_date_2">#9b9da0</color>
+    <color name="color_u445_bike_overview_date_3">#ffffff</color>
+    <color name="color_u445_bike_overview_date_4">#99ffffff</color>
+    <color name="color_u445_bike_overview_date_7">#99ffffff</color>
+    <color name="color_u445_bike_overview_date_8">#99ffffff</color>
+
+    <color name="color_u445_bike_overview_text_2">@color/color_ccffffff</color>
+    <color name="color_u445_bike_overview_text_3">@color/white</color>
+    <color name="color_u445_bike_overview_text_4">@color/color_ccffffff</color>
+    <color name="color_u445_bike_overview_text_7">@color/color_ccffffff</color>
+
+    <color name="color_u445_last_ride_2">@color/color_9b9da0</color>
+    <color name="color_u445_last_ride_3">@color/white</color>
+    <color name="color_u445_last_ride_4">@color/white</color>
+
+    <color name="color_u445_bike_service_2">@color/color_ebb231</color>
+    <color name="color_u445_bike_service_3">@android:color/white</color>
+    <color name="color_u445_bike_service_4">@android:color/white</color>
+    <color name="color_u445_bike_service_8">#A8A5D7FA</color>
+
+    <color name="color_u445_text_recent_search_2">@color/color_ebb231</color>
+    <color name="color_u445_text_recent_search_3">@android:color/white</color>
+    <color name="color_u445_text_recent_search_4">@android:color/white</color>
+    <color name="color_u445_text_recent_search_5">@android:color/white</color>
+    <color name="color_u445_text_recent_search_7">@android:color/white</color>
+
+    <color name="color_u445_disclaimer_2">#5d6771</color>
+    <color name="color_u445_disclaimer_3">#99ffffff</color>
+    <color name="color_u445_disclaimer_4">@color/color_4cffffff</color>
+    <color name="color_u445_disclaimer_7">#4cffffff</color>
+    <color name="color_u445_disclaimer_8">#5d6771</color>
+
+    <color name="color_u445_last_ride_date_2">@color/color_5d6771</color>
+    <color name="color_u445_last_ride_date_3">@color/color_b3ffffff</color>
+    <color name="color_u445_last_ride_date_4">@color/color_b3ffffff</color>
+    <color name="color_u445_last_ride_date_7">@color/color_b3ffffff</color>
+
+
+    <color name="color_u445_dashboard_base_2">#101316</color>
+    <color name="color_u445_dashboard_base_3">#032d52</color>
+    <color name="color_u445_dashboard_base_4">#651e23</color>
+    <color name="color_u445_dashboard_base_7">#651e23</color>
+    <color name="color_u445_dashboard_base_8">#032d52</color>
+
+    <color name="color_u445_dashboard_bike_name_4">#ffc658</color>
+    <color name="color_u458_dashboard_base">#032d52</color>
+    <color name="color_u445b_dashboard_bike_name">#daff12</color>
+    <color name="color_u445b_dashboard_base">#182254</color>
+
+
+    <color name="color_u445_map_legend_a_2">@color/color_ntorq_speed_pattarn_a</color>
+    <color name="color_u445_map_legend_a_3">@color/white</color>
+    <color name="color_u445_map_legend_a_4">@color/white</color>
+
+    <color name="color_u445_map_legend_b_2">@color/color_ntorq_speed_pattarn_b</color>
+    <color name="color_u445_map_legend_b_3">@color/white</color>
+    <color name="color_u445_map_legend_b_4">@color/white</color>
+
+    <color name="color_u445_map_legend_c_2">@color/color_ntorq_speed_pattarn_c</color>
+    <color name="color_u445_map_legend_c_3">@color/white</color>
+    <color name="color_u445_map_legend_c_4">@color/white</color>
+    <color name="color_u445_location">#9b9da0</color>
+
+    <color name="color_location_list_primary_marvel_2">#ffffff</color>
+    <color name="color_location_list_primary_marvel_3">#25bfff</color>
+    <color name="color_location_list_primary_marvel_4">#ffffff</color>
+    <color name="color_location_list_primary_marvel_5">#ffffff</color>
+    <color name="color_location_list_primary_marvel_6">#ffffff</color>
+    <color name="color_location_list_primary_marvel_7">#ffffff</color>
+    <color name="color_location_list_primary_marvel_8">#ffffff</color>
+
+    <color name="color_location_list_secondary_marvel_2">#9b9da0</color>
+    <color name="color_location_list_secondary_marvel_3">#ffffff</color>
+    <color name="color_location_list_secondary_marvel_4">#9b9da0</color>
+    <color name="color_location_list_secondary_marvel_5">#9b9da0</color>
+    <color name="color_location_list_secondary_marvel_6">#9b9da0</color>
+    <color name="color_location_list_secondary_marvel_7">#9b9da0</color>
+    <color name="color_location_list_secondary_marvel_8">#9b9da0</color>
+
+    <color name="color_location_list_devider_marvel_2">#3c3c3c</color>
+    <color name="color_location_list_devider_marvel_3">#112e46</color>
+    <color name="color_location_list_devider_marvel_4">#4e2d2e</color>
+    <color name="color_location_list_devider_marvel_5">#000000</color>
+    <color name="color_location_list_devider_marvel_6">#3c3c3c</color>
+    <color name="color_location_list_devider_marvel_7">#000000</color>
+    <color name="color_location_list_devider_marvel_8">#112e46</color>
+
+    <color name="color_location_list_devider_u532">#bdbdbd</color>
+
+    <color name="color_location_whereto_bg_marvel_2">#131517</color>
+    <color name="color_location_whereto_bg_marvel_3">#0a3253</color>
+    <color name="color_location_whereto_bg_marvel_4">#260506</color>
+
+    <color name="color_u445_bg_location_list_2">#292b2c</color>
+    <color name="color_u445_bg_location_list_3">#1c3e5a</color>
+    <color name="color_u445_bg_location_list_4">#450c0e</color>
+    <color name="color_u445_bg_location_list_5">#000000</color>
+    <!-- <color name="color_u445_bg_location_list_6">#040712</color> #000000FF 0E183C-->
+    <color name="color_u445_bg_location_list_6">#0E183C</color>
+    <color name="color_u445_bg_location_list_7">#0E0995</color>
+    <color name="color_u445_bg_location_list_8">#292b2c</color>
+
+    <color name="color_navigation_top_strip">#4D5160</color>
+    <color name="color_navigation_rerouting">#315369</color>
+
+    <color name="color_u445_bg_settings_2">#131517</color>
+    <color name="color_u445_bg_settings_3">#0a3253</color>
+    <color name="color_u445_bg_settings_4">#350003</color>
+    <color name="color_u445_bg_settings_7">#001165</color>
+    <color name="color_u445_bg_settings_8">#131517</color>
+
+    <color name="color_u445_setting_title_2">#ccebb231</color>
+    <color name="color_u445_setting_title_3">#cc25bfff</color>
+    <color name="color_u445_setting_title_4">#ccffffff</color>
+    <color name="color_u445_setting_title_5">#9c9c9c</color>
+    <color name="color_u445_setting_title_6">#daff12</color>
+    <color name="color_u445_setting_title_8">#cc78c8ff</color>
+
+    <color name="n251_address_chip_text_color_5">#000000</color>
+    <color name="n251_address_chip_text_color_6">#daff12</color>
+
+    <color name="color_u445_setting_description_2">#ccffffff</color>
+    <color name="color_u445_setting_description_3">#ccffffff</color>
+    <color name="color_u445_setting_description_4">#ccffffff</color>
+    <color name="color_u445_setting_description_7">#ccb9b9b9</color>
+
+    <color name="color_u445_setting_header_2">#ffffff</color>
+    <color name="color_u445_setting_header_3">#ffffff</color>
+    <color name="color_u445_setting_header_4">#ffffff</color>.
+
+    <color name="color_u445_setting_hint_2">#19ffffff</color>
+    <color name="color_u445_setting_hint_3">#19ffffff</color>
+    <color name="color_u445_setting_hint_4">#19ffffff</color>
+
+    <color name="color_u445_tint_2">#a00aae</color>
+    <color name="color_u445_tint_3">#ffffff</color>
+    <color name="color_u445_tint_4">#ffc658</color>
+    <color name="color_u445_tint_7">#ffe117</color>
+    <color name="color_u445_tint_8">#f9fafb</color>
+
+    <color name="color_u445_bg_et_2">#060608</color>
+    <color name="color_u445_bg_et_3">#012341</color>
+    <color name="color_u445_bg_et_4">#461216</color>
+    <color name="color_u445_bg_et_7">#000437</color>
+    <color name="color_u445_bg_et_8">#060606</color>
+
+    <color name="color_u445_border_et_2">#444446</color>
+    <color name="color_u445_border_et_3">#B6BDC7</color>
+    <color name="color_u445_border_et_4">#967c7d</color>
+    <color name="color_u445_border_et_7">#f4f4f4</color>
+    <color name="color_u445_border_et_8">#f4f4f4</color>
+
+    <color name="color_location_marvel_2">#9b9da0</color>
+    <color name="color_location_marvel_3">#9b9da0</color>
+    <color name="color_location_marvel_4">#ffffff</color>
+    <color name="color_fd2f2f">#fd2f2f</color>
+    <color name="color_9cc4e3">#9cc4e3</color>
+    <color name="color_45a7e6">#45a7e6</color>
+    <color name="color_850000">#850000</color>
+    <color name="color_a6aab6">#a6aab6</color>
+    <color name="color_575757">#575757</color>
+    <color name="color_2b71b8">#2b71b8</color>
+    <color name="color_c7c8ca">#c7c8ca</color>
+    <color name="dark_blue_grey">#192841</color>
+    <color name="color_3688dc">#3688dc</color>
+    <color name="color_398ee5">#398ee5</color>
+    <color name="color_191717">#191717</color>
+    <color name="color_3689dd">#3689dd</color>
+    <color name="color_51748a">#51748a</color>
+    <color name="color_a7a9ac">#a7a9ac</color>
+    <color name="color_4d4d4f">#4d4d4f</color>
+    <color name="color_7c7c7c">#7c7c7c</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_location_marvel_5">#000000</color>
+    <color name="color_location_marvel_7">#fefefe</color>
+    <color name="color_location_marvel_8">#9b9da0</color>
+    <color name="light_gray_sync">#404353</color>
+    <color name="light_gray_text_color">#a6a4a4a4</color>
+
+    <color name="u458_graph_lable">#7b7b7b</color>
+
+    <color name="color_u458_setting_header">#555555</color>
+    <color name="color_u458_setting_hint">#555555</color>
+    <color name="color_u458_dob_hint">#3d63c7</color>
+
+    <color name="color_u458_setting_transparent_bg">#80000000</color>
+
+    <color name="color_u458_manage_address_title">#ffffff</color>
+    <color name="color_u458_manage_address_saved_count">#ffffff</color>
+    <color name="color_u458_manage_address_total_count">#939393</color>
+    <color name="u458_ride_label_2">#a2a2a2</color>
+    <color name="u458_ride_label_3">#a2a2a2</color>
+    <color name="u458_ride_label_4">#a2a2a2</color>
+    <color name="u458_ride_list_bg">#0f0f0f</color>
+    <color name="u458_share_achievement_bg">#1e1e1e</color>
+    <color name="u458_gray_text">#9c9c9c</color>
+
+    <color name="color_u458_setting_title">#ffffff</color>
+    <color name="color_u458_setting_description">#9c9c9c</color>
+    <color name="color_u458_pre_ride_title_text">#ffffff</color>
+    <color name="color_u458_pre_ride_bg">#0b0b0b</color>
+
+    <color name="color_u458_mode_sel_bg">#050505</color>
+    <color name="color_u458_mode_sel_ride_count">#ffffff</color>
+    <color name="digi_doc_progress_color">#FFA500</color>
+
+    <color name="color_u458_odo_arc_1">#d31f26</color>
+    <color name="color_u458_odo_arc_2">#00a2ff</color>
+    <color name="color_u458_odo_arc_3">#862bfe</color>
+    <color name="color_u458_connected_arc">#d27106</color>
+    <color name="color_u458_non_filled_arc">#0a0a0a</color>
+
+    <color name="color_daff12">#daff12</color>
+    <color name="color_ffe806">#ffe806</color>
+    <color name="color_00de00">#00de00</color>
+    <color name="color_f5f7f9">#f5f7f9</color>
+    <color name="color_c6cfde">#c6cfde</color>
+    <color name="color_182254">#182254</color>
+    <color name="color_555555">#555555</color>
+    <color name="color_3d63c7">#3d63c7</color>
+    <color name="color_cef016">#cef016</color>
+
+    <color name="color_737373">#737373</color>
+    <color name="color_d0ec42">#d0ec42</color>
+    <color name="color_181b32">#181b32</color>
+    <color name="color_00a8ff">#00a8ff</color>
+    <color name="color_6773a2">#6773a2</color>
+    <color name="color_040815">#040815</color>
+    <color name="color_010510">#010510</color>
+    <color name="color_8f001b">#8f001b</color>
+    <color name="color_067a00">#067a00</color>
+    <color name="color_7d02a6">#7d02a6</color>
+    <color name="color_4f1100">#4f1100</color>
+    <color name="color_0c397d">#0c397d</color>
+    <color name="color_27EDEDED">#EDEDED</color>
+    <color name="color_532_text_color">#1d1d1d</color>
+    <color name="color_532_list_background">#f0f0f0</color>
+    <color name="color_ebebeb">#ebebeb</color>
+    <color name="color_f0f0f0">#f0f0f0</color>
+    <color name="color_151515">#151515</color>
+    <color name="color_fedd12">#fedd12</color>
+    <color name="color_fdac17">#fdac17</color>
+    <color name="color_999793">#999793</color>
+    <color name="view_background">#656770</color>
+    <!--    <color name="color_ffe806">#ffe806</color>-->
+    <!--    <color name="color_151515">#151515</color>-->
+    <color name="color_c7c7c7">#c7c7c7</color>
+    <color name="color_fcfcfc">#fcfcfc</color>
+    <color name="color_fffefe">#fffefe</color>
+    <color name="color_8e8e8e">#8E8E8E</color>
+    <color name="color_096f71">#096f71</color>
+    <color name="color_062747">#062747</color>
+    <color name="color_dedede">#dedede</color>
+    <color name="color_777777">#777777</color>
+    <color name="color_009cff">#009cff</color>
+    <color name="color_282828">#282828</color>
+    <color name="color_green">#0a7c7e</color>
+    <color name="color_c7e63e">#c7e63e</color>
+    <color name="color_e4e8ef">#e4e8ef</color>
+    <color name="new_divider_color_green">#303030</color>
+
+
+    <color name="u449_background">#f2f4f8</color>
+    <color name="color_5d5d5d">#5d5d5d</color>
+    <color name="color_a9a9a9">#a9a9a9</color>
+    <color name="color_b01924">#b01924</color>
+    <color name="color_ea0111">#ea0111</color>
+
+    <color name="color_1a1a1a">#1a1a1a</color>
+    <color name="color_b3b3b3">#b3b3b3</color>
+    <color name="color_aaaaaa">#aaaaaa</color>
+    <color name="color_e2e6f2">#e2e6f2</color>
+    <color name="color_d80000">#d80000</color>
+    <color name="color_585859">#585859</color>
+    <color name="color_80ffffff">#80ffffff</color>
+    <color name="color_E6000000">#E6000000</color>
+    <color name="color_ffe347">#ffe347</color>
+
+    <color name="color_183883">#183883</color>
+    <color name="color_a5bba">#a5abba</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_111111">#111111</color>
+    <color name="color_309d55">#309D55</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_10265b">#10265B</color>
+    <color name="color_d2d2d2">#D2D2D2</color>
+    <color name="color_333333">#333333</color>
+
+    <color name="color_feedback_bad">#EE313C</color>
+    <color name="color_feedback_average">#EBB907</color>
+    <color name="color_feedback_good">#309D55</color>
+</resources>
