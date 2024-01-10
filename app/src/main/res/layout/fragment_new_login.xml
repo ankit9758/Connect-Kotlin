@@ -1,14 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".authentication.ui.fragments.NewLoginFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+
+        <variable
+            name="isIndia"
+            type="boolean" />
+
+        <variable
+            name="isSmsEnable"
+            type="boolean" />
+        <import type="android.text.InputType" />
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint_layout_login"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="@color/white"
+        tools:context=".authentication.ui.fragments.NewLoginFragment">
 
-</FrameLayout>
+        <Spinner
+            android:id="@+id/sp_country"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/margin_48"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/login_screen_top_margin"
+            android:hint="@string/country"
+            android:prompt="@string/country"
+            android:singleLine="true"
+            android:background="@drawable/bg_spinner_grey"
+            android:drawSelectorOnTop="true"
+            android:spinnerMode="dropdown"
+            android:visibility="visible"
+            app:hintTextAppearance="@style/TextLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/button_continue"
+            app:layout_constraintStart_toStartOf="@id/button_continue"
+            android:layout_marginStart="@dimen/margin_14" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_otp_sent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:includeFontPadding="false"
+            android:text="@string/otp_will_be_sent_to_this_email"
+            app:layout_constraintStart_toStartOf="@+id/constraint_mobile"
+            app:layout_constraintTop_toBottomOf="@id/constraint_mobile" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_mobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_17"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/bg_onboarding_login"
+            app:layout_constraintEnd_toEndOf="@+id/button_continue"
+            app:layout_constraintStart_toStartOf="@+id/sp_country"
+            app:layout_constraintTop_toBottomOf="@+id/sp_country">
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtmobilenmber"
+                android:layout_width="match_parent"
+                style="@style/onboarding_edit_text"
+                android:hint="@{isIndia ? @string/enter_phone_number : isSmsEnable ? @string/email_phone :@string/hint_email}"
+                android:inputType="@{isIndia ?   InputType.TYPE_CLASS_NUMBER :  InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS}"
+                android:maxLength="100"
+                android:focusable="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/Red_F2081C"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@+id/constraint_mobile"
+            app:layout_constraintTop_toBottomOf="@+id/title_otp_sent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_continue"
+            style="@style/button_onboarding_continue"
+            android:layout_marginTop="@dimen/_30sdp"
+            app:layout_constraintStart_toStartOf="@+id/constraint_mobile"
+            app:layout_constraintTop_toBottomOf="@+id/tv_error_message" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_accept_term_conditions"
+            style="@style/onboarding_terms_title_without_left_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/by_continuing_i_accept"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/color_777777"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/text_terms"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            tools:layout_conversion_absoluteHeight="20dp"
+            tools:layout_conversion_absoluteWidth="152dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_terms"
+            style="@style/onboarding_terms_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/terms_on"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/red_wip"
+            app:layout_constraintEnd_toStartOf="@+id/text_and"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_accept_term_conditions"
+            app:layout_constraintTop_toTopOf="@+id/text_accept_term_conditions"
+            tools:layout_conversion_absoluteHeight="20dp"
+            tools:layout_conversion_absoluteWidth="42dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_and"
+            style="@style/onboarding_terms_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/and"
+            android:textSize="@dimen/_9ssp"
+            android:textColor="@color/color_777777"
+            android:textColorLink="@color/blue_007AFF"
+            app:layout_constraintEnd_toStartOf="@+id/text_privacy_policy"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_terms"
+            app:layout_constraintTop_toTopOf="@+id/text_terms"
+            tools:layout_conversion_absoluteHeight="20dp"
+            tools:layout_conversion_absoluteWidth="25dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text_privacy_policy"
+            style="@style/onboarding_terms_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_9ssp"
+            android:text="@string/privacy_policy"
+            android:textColor="@color/red_wip"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/text_and"
+            app:layout_constraintTop_toTopOf="@+id/text_and"
+            tools:layout_conversion_absoluteHeight="20dp"
+            tools:layout_conversion_absoluteWidth="93dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

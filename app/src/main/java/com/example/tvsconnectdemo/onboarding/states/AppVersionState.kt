@@ -1,6 +1,6 @@
 package com.example.tvsconnectdemo.onboarding.states
 
-import com.example.tvsconnectdemo.authentication.models.AppVersion
+import com.example.tvsconnectdemo.onboarding.models.AppVersion
 
 sealed class AppVersionState {
     object ShowLoading:AppVersionState()

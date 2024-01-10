@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewPagerData"
+            type="com.example.tvsconnectdemo.onboarding.models.ViewPagerData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image_tutorial_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="@dimen/tutorial_image_margin_top"
+                android:src="@{context.getDrawable(viewPagerData.imageResource)}" />
+
+        </FrameLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/SFMedium703A"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:text="@{context.getString(viewPagerData.title)}" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubDesc"
+            style="@style/SFRegular4060"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/margin_16"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:maxLines="2"
+            android:minLines="2"
+            android:text="@{context.getString(viewPagerData.description)}" />
+
+    </LinearLayout>
+</layout>

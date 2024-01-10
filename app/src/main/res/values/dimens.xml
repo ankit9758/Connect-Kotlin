@@ -246,5 +246,8 @@
     <dimen name="feedback_divider_margin">20dp</dimen>
     <dimen name="login_screen_top_margin">170dp</dimen>
     <dimen name="login_screen_bottom_margin">60dp</dimen>
+    <dimen name="logo_margin_top">@dimen/_56sdp</dimen>
+    <dimen name="tutorial_image_margin_top">@dimen/_40sdp</dimen>
+    <dimen name="tutorial_text_box_height">@dimen/_100sdp</dimen>
     <dimen name="font_15.3">15.3sp</dimen>
 </resources>

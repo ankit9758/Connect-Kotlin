@@ -1,5 +1,6 @@
 package com.example.tvsconnectdemo.onboarding.ui.activity
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -33,6 +34,7 @@ class SplashActivity : AppCompatActivity() {
     private fun setUpViewModel() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_splash)
         viewModel = ViewModelProvider(this)[OnBoardingViewModel::class.java]
+        viewModel.getProductList()
     }
     private fun setupObservers() {
         lifecycleScope.launchWhenStarted {
@@ -50,6 +52,7 @@ class SplashActivity : AppCompatActivity() {
                         is AppVersionState.Success -> {
                             progressBar.visibility= View.GONE
                             Log.d("Sucesss------>",Gson().toJson(it.data))
+                            callOnBoardingScreen()
                         }
 
                         else -> {}
@@ -58,5 +61,9 @@ class SplashActivity : AppCompatActivity() {
             }
 
         }
+    }
+
+    private fun callOnBoardingScreen() {
+        startActivity(Intent(this,OnBoardingActivity::class.java))
     }
 }

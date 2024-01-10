@@ -1,6 +1,6 @@
 package com.example.tvsconnectdemo.authentication.network
 
-import com.example.tvsconnectdemo.authentication.models.AppVersion
+import com.example.tvsconnectdemo.onboarding.models.AppVersion
 import com.example.tvsconnectdemo.webservice.ApiConstant
 import retrofit2.Call
 import retrofit2.Response

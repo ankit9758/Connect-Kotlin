@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.example.tvsconnectdemo.utils.AppSettings" />
+        <import type="android.view.View" />
+        <variable
+            name="context"
+            type="com.example.tvsconnectdemo.onboarding.ui.activity.OnBoardingActivity" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".onboarding.ui.activity.OnBoardingActivity">
+
+
+        <ImageView
+            android:id="@+id/top_view_pager_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/logo_margin_top"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_tvs_splash" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_view_pager_image"
+            android:layout_above="@id/into_tab_layout"
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/into_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/llFooterBt"
+            android:paddingTop="@dimen/margin_2"
+            android:backgroundTint="@android:color/transparent"
+            app:tabBackground="@drawable/tab_pager_selector"
+            app:tabGravity="center"
+            app:tabIndicatorHeight="0dp" />
+
+        <LinearLayout
+            android:id="@+id/llFooterBt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_70"
+                android:layout_gravity="center"
+                android:onClick="@{context::onNextClick}"
+                android:src="@mipmap/btn_next"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/tutorial_btn_layout">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_skip"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:background="@drawable/bg_onboarding_skip_button"
+                    android:fontFamily="@font/roboto_regular"
+                    android:onClick="@{context::onLoginClick}"
+                    android:text="@string/btn_skip"
+                    android:textColor="@color/color_99999"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:visibility="@{AppSettings.INSTANCE.isIBApp()  ? View.GONE :View.VISIBLE}"/>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_explore"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_70"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:background="@drawable/bg_onboarding_login_button"
+                    android:fontFamily="@font/roboto_regular"
+                    android:onClick="@{context::onNextClick}"
+                    android:text="@string/explore"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>
