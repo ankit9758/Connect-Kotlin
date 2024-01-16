@@ -1,9 +1,12 @@
 package com.example.tvsconnectdemo.utils
 
 import android.app.Activity
+import android.content.Context
 import android.content.DialogInterface
 import android.os.Environment
 import android.util.Log
+import android.view.View
+import android.view.inputmethod.InputMethodManager
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
 import com.example.tvsconnectdemo.BuildConfig
@@ -37,12 +40,13 @@ object Utils {
         }
         return false
     }
+
     fun saveAppCrashLogs(log: String) {
         Log.e("APP_CRASH_LOG", log)
         if (BuildConfig.DEBUG) {
             var bw: BufferedWriter? = null
             try {
-                val filePath: String =getLogsPath() + "tvs-app-crash-log.txt"
+                val filePath: String = getLogsPath() + "tvs-app-crash-log.txt"
                 bw = BufferedWriter(FileWriter(filePath, true))
                 bw.write(Calendar.getInstance().time.toString() + ":::>\t\t" + log)
                 bw.newLine()
@@ -76,7 +80,7 @@ object Utils {
      * @return
      */
     fun getStoragePath(): File? = if (isExternalStorageWritable()) {
-            TVSApplication.getInstance()?.getExternalFilesDir(null)
+        TVSApplication.getInstance()?.getExternalFilesDir(null)
     } else TVSApplication.getInstance()?.filesDir
 
     // Checks if a volume containing external storage is available
@@ -84,6 +88,7 @@ object Utils {
     private fun isExternalStorageWritable(): Boolean {
         return Environment.getExternalStorageState() == Environment.MEDIA_MOUNTED
     }
+
     fun deleteImage() {
         var file: File = File(getAssetsPath() + "my_profile.jpg")
         if (file.exists()) {
@@ -103,4 +108,26 @@ object Utils {
     fun getAssetsPath(): String {
         return (getStoragePath().toString().plus(FOLDER_ASSETS) + File.separator)
     }
+
+    fun requestFocusWithKeyboard(view: View) {
+        view.requestFocus()
+        showSoftKeyboard(view)
+    }
+
+    fun showSoftKeyboard(view: View) {
+        try {
+            val inputMethodManager =
+                view.context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+            inputMethodManager.showSoftInput(view, 0)
+        } catch (e: java.lang.Exception) {
+            e.printStackTrace()
+        }
+    }
+
+
+    fun hideSoftkeyboard(view: View) {
+        val imm = view.context.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        imm.hideSoftInputFromWindow(view.windowToken, 0)
+    }
+
 }

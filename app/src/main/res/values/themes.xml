@@ -79,4 +79,69 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
+
+    <style name="EditTextFieldInputLayout" parent="MatchWidth">
+        <item name="android:layout_width">@dimen/margin_250</item>
+        <item name="android:layout_height">@dimen/margin_48</item>
+        <item name="android:paddingStart">@dimen/margin_15</item>
+        <item name="android:background">@drawable/bg_found_et</item>
+        <item name="android:paddingEnd">@dimen/margin_15</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_marginStart">@dimen/margin_8</item>
+        <item name="android:layout_marginEnd">@dimen/margin_15</item>
+        <item name="android:fontFamily">@font/sfprodisplay_regular</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/gray_909090</item>
+        <item name="android:textColorPrimary">@color/colorAccent</item>
+        <item name="android:textColorHighlight">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+    <style name="MatchWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ErrorField_SignUp" parent="MatchWidth">
+        <item name="android:fontFamily">@font/sfprodisplay_regular</item>
+        <item name="android:textColor">@color/Red_F2081C</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginTop">@dimen/margin_5</item>
+        <item name="android:layout_marginStart">@dimen/margin_9</item>
+        <item name="android:layout_marginEnd">@dimen/margin_9</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/font_12</item>
+
+
+    </style>
+    <style name="EditTextFieldText" parent="MatchWidth">
+        <item name="android:fontFamily">@font/sfprodisplay_regular</item>
+        <item name="android:textColor">@color/black_3A3A3A</item>
+        <item name="android:textColorHint">@color/gray_909090</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:paddingTop">3dp</item>
+    </style>
+
+    <style name="sfProdisplayMedium40" parent="WrapSize">
+        <item name="android:fontFamily">@font/sfprodisplay_medium</item>
+        <item name="android:textColor">@color/black_3A3A3A</item>
+        <item name="android:textSize">@dimen/font_14</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+    <style name="SFRegular45white" parent="WrapSize">
+        <item name="android:textSize">@dimen/font_15</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/sfprodisplay_regular</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="FBGPLusButton" parent="MatchWidth">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/margin_70</item>
+    </style>
+    <style name="FBGPLusButtonSetting" parent="FBGPLusButton">
+        <item name="android:layout_height">@dimen/margin_85</item>
+
+    </style>
 </resources>

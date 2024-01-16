@@ -5,6 +5,7 @@ import com.example.tvsconnectdemo.BuildConfig
 import com.example.tvsconnectdemo.TVSApplication
 import com.example.tvsconnectdemo.authentication.network.APIService
 import com.example.tvsconnectdemo.utils.DateUtils
+import com.example.tvsconnectdemo.utils.KEYS
 import com.example.tvsconnectdemo.utils.PrintLog
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -122,8 +123,12 @@ object NetworkModule {
                 .addHeader("Accept", "*/*") /*.addHeader(*/ /*"x-access-token"*/ /*"token",
                             PreferenceUtils.getInstance(context).getValue(context.getString(R.string.pref_token), ""))*/
                 .addHeader("UserId","")
-                .addHeader("countryId","")
+                .addHeader("countryId","48")
                 .addHeader("Region",BuildConfig.Region)
+                .build()
+            request = request.newBuilder()
+                .addHeader(
+                    KEYS.QUERY_PARAM_LANGUAGE, "en-US") //Tells server about users language preference
                 .build()
             Log.d("RestClient", "provideCacheInterceptor: " + request.headers)
             // this condition should be removed once upgradeToken api is deprecated.

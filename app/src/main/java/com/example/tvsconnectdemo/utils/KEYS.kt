@@ -2,7 +2,7 @@ package com.example.tvsconnectdemo.utils
 
 import com.example.tvsconnectdemo.BuildConfig
 
-class KEYS {
+object KEYS {
 
     val DB_SECRET_KEY by lazy { "DB_SECRET_KEY" }
     val STORAGE_SECRET_KEY by lazy { "STORAGE_SECRET_KEY" }

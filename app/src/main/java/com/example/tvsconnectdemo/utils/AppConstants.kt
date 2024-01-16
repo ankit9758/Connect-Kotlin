@@ -10,6 +10,7 @@ object AppConstants {
     const val WIP_STATUS_SUSPENDED = "2"
     const val WIP_STATUS_INVOICED = "4"
     const val WIP_STATUS_COMPLETED = "5"
+    const val NORMAL = "normal"
 
 
     const val HOME = "Home"
@@ -44,6 +45,7 @@ object AppConstants {
         loginSelectedCountryId = 0
     }
 
+    var FROM_LOGIN = "fromLogin"
     var signUpSelectedCountryId = 0
     var signUpName = ""
     var signUpMobile = ""
@@ -63,4 +65,5 @@ object AppConstants {
     }
 
     var STR_TO_HEX_FORMAT = "0x%02x"
+    var VIDEO_REGEX="^(?:http(s)?:\\/\\/)?(?:youtu\\.be\\/|(?:www\\.|m\\.)?youtube\\.com\\/(?:watch|embed)(?:\\.php)?(?:\\?.*v=|\\/))([a-zA-Z0-9\\-_]+)$";
 }

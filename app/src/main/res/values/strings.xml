@@ -4672,4 +4672,6 @@ you will lose your change</string>
     <string name="N251BS6_maximumTorqueValue">10,5NM @ 5500 RPM</string>
     <string name="N251BS6_maximumPowerValue">6,9 KW @ 7000 RPM</string>
     <string name="no_sim_found">No Sim Found</string>
+    <string name="msg_enter_valid_mobile">Please enter a valid phone number<!-- of length 9 to 13 digits--></string>
+    <string name="msg_enter_valid_mail_id">Please enter a valid email address.</string>
 </resources>

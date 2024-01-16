@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.viewpager2.widget.ViewPager2
 import com.example.tvsconnectdemo.R
+import com.example.tvsconnectdemo.authentication.ui.activity.AuthActivity
 import com.example.tvsconnectdemo.authentication.ui.activity.MainActivity
 import com.example.tvsconnectdemo.databinding.ActivityOnBoardingBinding
 import com.example.tvsconnectdemo.onboarding.models.ViewPagerData
@@ -100,11 +101,11 @@ class OnBoardingActivity : AppCompatActivity() {
         if (binding.viewPager.currentItem != originalPagerList.size - 1) {
             binding.viewPager.currentItem = binding.viewPager.currentItem + 1
         } else {
-            startActivity(Intent(this, MainActivity::class.java))
+            startActivity(Intent(this, AuthActivity::class.java))
         }
     }
 
     fun onLoginClick(view: View) {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, AuthActivity::class.java))
     }
 }

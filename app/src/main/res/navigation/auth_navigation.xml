@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation"
+    app:startDestination="@id/newLoginFragment">
+
+    <fragment
+        android:id="@+id/newLoginFragment"
+        android:name="com.example.tvsconnectdemo.authentication.ui.fragments.NewLoginFragment"
+        tools:layout="@layout/fragment_new_login"
+        android:label="Login">
+
+        <action
+            android:id="@+id/action_newLoginFragment_to_newSignUpFragment"
+            app:destination="@id/newSignUpFragment"/>
+
+        <action
+            android:id="@+id/action_newLoginFragment_to_newVerifyOtpFragment2"
+            app:destination="@id/newVerifyOtpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newSignUpFragment"
+        android:label="Sign Up"
+        android:name="com.example.tvsconnectdemo.authentication.ui.fragments.NewSignupFragment"
+        tools:layout="@layout/fragment_new_signup">
+
+        <argument
+            android:name="email"
+            app:argType="string" />
+
+        <argument
+            android:name="phoneNumber"
+            app:argType="string" />
+        <argument
+            android:name="comingFrom"
+            app:argType="string" />
+        <argument
+            android:name="selectedCountryPosition"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_newSignUpFragment_to_newVerifyOtpFragment"
+            app:destination="@id/newVerifyOtpFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/newVerifyOtpFragment"
+        android:name="com.example.tvsconnectdemo.authentication.ui.fragments.NewVerifyOtpFragment"
+        tools:layout="@layout/fragment_new_verify_otp"
+        android:label="Verify Otp">
+
+    </fragment>
+</navigation>

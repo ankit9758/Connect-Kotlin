@@ -4,7 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <variable
+            name="context"
+            type="com.example.tvsconnectdemo.authentication.ui.fragments.NewLoginFragment" />
         <variable
             name="isIndia"
             type="boolean" />
@@ -20,8 +22,7 @@
         android:id="@+id/constraint_layout_login"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        tools:context=".authentication.ui.fragments.NewLoginFragment">
+        android:background="@color/white">
 
         <Spinner
             android:id="@+id/sp_country"
@@ -70,13 +71,15 @@
                 android:layout_width="match_parent"
                 style="@style/onboarding_edit_text"
                 android:hint="@{isIndia ? @string/enter_phone_number : isSmsEnable ? @string/email_phone :@string/hint_email}"
-                android:inputType="@{isIndia ?   InputType.TYPE_CLASS_NUMBER :  InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS}"
+                android:inputType="@{isIndia ?    InputType.TYPE_CLASS_NUMBER :  InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS}"
                 android:maxLength="100"
                 android:focusable="true"
                 android:layout_marginEnd="@dimen/_10sdp"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_error_message"
             android:layout_width="wrap_content"
@@ -88,10 +91,12 @@
             app:layout_constraintStart_toStartOf="@+id/constraint_mobile"
             app:layout_constraintTop_toBottomOf="@+id/title_otp_sent" />
 
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_continue"
             style="@style/button_onboarding_continue"
             android:layout_marginTop="@dimen/_30sdp"
+            android:onClick="@{context::onRequestOtpClick}"
             app:layout_constraintStart_toStartOf="@+id/constraint_mobile"
             app:layout_constraintTop_toBottomOf="@+id/tv_error_message" />
 
@@ -116,6 +121,7 @@
             style="@style/onboarding_terms_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="@{context::showTermsAndConditions}"
             android:text="@string/terms_on"
             android:textSize="@dimen/_9ssp"
             android:textColor="@color/red_wip"
@@ -147,6 +153,7 @@
             style="@style/onboarding_terms_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="@{context::showPrivacyPolicy}"
             android:textSize="@dimen/_9ssp"
             android:text="@string/privacy_policy"
             android:textColor="@color/red_wip"
@@ -156,5 +163,15 @@
             app:layout_constraintTop_toTopOf="@+id/text_and"
             tools:layout_conversion_absoluteHeight="20dp"
             tools:layout_conversion_absoluteWidth="93dp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -9,12 +9,14 @@ import com.example.tvsconnectdemo.R
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class NewVerifyOtpFragment : Fragment() {
+class NewSignupFragment : Fragment() {
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_new_verify_otp, container, false)
+        return inflater.inflate(R.layout.fragment_new_signup, container, false)
     }
+
 }
